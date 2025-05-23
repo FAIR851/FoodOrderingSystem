@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+  background: linear-gradient(to bottom, #0072ff, #b6e0ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.wrapper {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.container {
+  padding: 10px;
+  text-align: center;
+}
+
+.logo {
+  width: 40%;
+  max-width: 180px;
+  margin: 0 auto 50px;
+  display: block;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+h3, p {
+  color: white;
+  margin-bottom: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  color: #333;
+}
+
+input:focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 0 2px rgba(0, 114, 255, 0.4);
+}
+
+button {
+  background-color: #004aad;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00348f;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.wrapper .register-link {
+    font-size: 12px; 
+    text-align: center;
+    margin: 5px 0; 
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 20px 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  label,
+  input,
+  button {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px;
+  }
+}
