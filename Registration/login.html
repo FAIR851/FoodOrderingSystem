@@ -9,26 +9,24 @@
 <body>
   <div class="wrapper">
     <div class="container">
-    <img src="../image/Logo.png" alt="NTC Logo" class="logo">
-    <h2>Login</h2>
-    <h3>Welcome back</h3>
+      <a href="../index.html">
+      <img src="../image/arrow.svg" alt="arrow" class="back" id="back">
+      </a>
+      <img src="../image/Logo.png" alt="NTC Logo" class="logo">
+      <h2>Login</h2>
+      <h3>Welcome back</h3>
     <form action="login.php" method="POST">
         <div class="form-group">
             <label for="student_id">Student ID</label>
             <input type="text" id="student_id" name="student_id" required>
-        </div>
-
-        <div class="form-group">
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
         </div>
 
-        <div class="form-group">
-            <button type="submit">Login</button>
-        </div>
+          <button type="submit">Login</button>
 
         <div class="register-link">
-            <p>Don't have an account? <a href="#" id="showRegisterForm">Register</a></p>
+            <p>Don't have an account? <a href="../Registration/signup.html " id="showRegisterForm">Register</a></p>
         </div>
     </form>
     </div>
